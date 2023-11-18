@@ -30,10 +30,10 @@ body{
 
 @keyframes animateCloud{
     0%{
-        filter: drop-shadow(8px 8px 0 #0005) drop-shadow( 0 0 0 #fff) brightness(1);
+        filter: drop-shadow(8px 8px 0 #0001) drop-shadow( 0 0 0 #fff) brightness(1);
     }
     95%{
-        filter: drop-shadow(8px 8px 0 #0005) drop-shadow( 0 0 50px #fff5) brightness(10);
+        filter: drop-shadow(8px 8px 0 #0001) drop-shadow( 0 0 50px #fff5) brightness(10);
     }
 }
 
@@ -47,4 +47,21 @@ body{
     border-radius: 50%;
     background-color: #484f59;
     box-shadow: 90px -10px 0 30px #484f59;
+}
+.container > canvas.cloud::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: #484f59;
+    border-radius: 100px;
+}
+
+.container > .cloud > .drop{
+    position: absolute;
+    top: 0;
+    background-color: #05a2eb;
+    width: 2px;
+    height: 10px;
+    transform-origin: bottom;
+    animation: animate 2s linear infinite;
 }
