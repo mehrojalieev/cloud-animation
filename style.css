@@ -3,3 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #1b1b1b;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #000;
+}
+.container > .cloud{
+        position: relative;
+        width: 320px;
+        height: 100px;
+        background-color: #ffffff;
+        border-radius: 100px;
+        filter: drop-shadow(8px 8px 0 #0005);
+        animation: animateCloud 2s linear infinite;
+}
+
