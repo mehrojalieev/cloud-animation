@@ -25,6 +25,26 @@ body{
         background-color: #ffffff;
         border-radius: 100px;
         filter: drop-shadow(8px 8px 0 #0005);
-        animation: animateCloud 2s linear infinite;
+        animation: animateCloud 2s steps(1) infinite;
 }
 
+@keyframes animateCloud{
+    0%{
+        filter: drop-shadow(8px 8px 0 #0005) drop-shadow( 0 0 0 #fff) brightness(1);
+    }
+    95%{
+        filter: drop-shadow(8px 8px 0 #0005) drop-shadow( 0 0 50px #fff5) brightness(10);
+    }
+}
+
+.container > .cloud:before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 40px;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: #484f59;
+    box-shadow: 90px -10px 0 30px #484f59;
+}
