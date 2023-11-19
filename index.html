@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <!-- <script defer src="./app.js"></script> -->
+    <script defer src="./app.js"></script>
     <title>Rain animation</title>
 </head>
 <body>
@@ -12,29 +12,7 @@
             <div class="cloud"></div>
         </div>
         <script>
-            function rain(){
-                let cloud = document.querySelector('.cloud')
-                let e = document.createElement("div")
-                let left = Math.floor(Math.random() * 310)
-                let width = Math.random()  * 5;
-                let height = Math.random()  * 50;
-                let duration = Math.random()  * 0.5
-
-                e.classList.add("drop")
-                cloud.appendChild(e)
-                e.style.left = left + "px"
-                e.style.width =0.5+width + "px"
-                e.style.height =0.5+width + "px"
-                e.style.animationDuration =1+duration +"s"
-
-                setTimeout(() => {
-                    cloud.removeChild(e)
-                }, 2000)
-            }
-
-            setInterval(function(){
-                rain()
-            }, 20)
+         
         </script>
 </body>
 </html>

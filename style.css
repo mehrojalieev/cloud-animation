@@ -77,6 +77,6 @@ body{
         transform: translateY(360px) scaleY(0.2);
     }
     100%{
-        transform: translateY(360px) scaleY(0.2) scaleX(15);
+        transform: translateY(360px) scaleY(0) scaleX(15);
     }
 }
